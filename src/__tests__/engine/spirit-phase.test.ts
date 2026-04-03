@@ -11,6 +11,7 @@ import {
   getValidLandsForPlacement,
 } from '../../engine/spirit-phase';
 import { powerCardId } from '../../models/power-card';
+import type { GameState, PendingPresencePlacement } from '../../models/game-state';
 
 describe('spirit-phase', () => {
   describe('selectGrowth', () => {
@@ -65,14 +66,14 @@ describe('spirit-phase', () => {
   });
 
   describe('placePresence', () => {
-    function stateWithPending(range: number, count = 1) {
+    function stateWithPending(range: number, count = 1): GameState {
       const state = initializeGame(undefined, 42);
-      const placements = Array.from({ length: count }, () => ({ range }));
+      const placements: PendingPresencePlacement[] = Array.from({ length: count }, () => ({ range }));
       return {
         ...state,
         phaseStep: 'PLACE_PRESENCE' as const,
         pendingPresencePlacements: placements,
-      } satisfies typeof state;
+      };
     }
 
     it('adds presence to target land from energy track', () => {
