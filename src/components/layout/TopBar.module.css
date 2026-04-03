@@ -1,0 +1,167 @@
+.topbar {
+  height: var(--topbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  flex-shrink: 0;
+  z-index: 10;
+  gap: 8px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.turn {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.phase {
+  font-size: 12px;
+  color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sep {
+  width: 1px;
+  height: 14px;
+  background: rgba(255,255,255,0.15);
+  flex-shrink: 0;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.fear {
+  font-size: 11px;
+  color: var(--warning);
+  font-weight: 500;
+  padding: 2px 5px;
+  background: rgba(234,179,8,0.15);
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.btn:active {
+  background: var(--accent);
+}
+
+.victory {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--success);
+  padding: 2px 6px;
+  background: rgba(34,197,94,0.15);
+  border-radius: 4px;
+}
+
+.defeat {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--danger);
+  padding: 2px 6px;
+  background: rgba(239,68,68,0.15);
+  border-radius: 4px;
+}
+
+/* ── Inline info items ───────────────────────── */
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.infoLabel {
+  font-size: 10px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.infoVal {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.infoSub {
+  font-size: 10px;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.elBadge {
+  font-size: 11px;
+  padding: 0 3px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 3px;
+  color: var(--text-primary);
+  white-space: nowrap;
+  margin-right: 1px;
+}
+
+/* ── Invader slots ───────────────────────────── */
+
+.invaderInfo {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.invSlot {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 1px 4px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.invLabel {
+  font-size: 9px;
+  margin-right: 1px;
+  opacity: 0.7;
+}
+
+.invDanger {
+  background: rgba(239,68,68,0.2);
+  color: var(--danger);
+}
+
+.invWarn {
+  background: rgba(234,179,8,0.15);
+  color: var(--warning);
+}
+
+.invDefault {
+  background: rgba(255,255,255,0.08);
+  color: var(--text-secondary);
+}

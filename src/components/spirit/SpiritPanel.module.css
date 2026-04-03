@@ -1,0 +1,161 @@
+.container {
+  padding: 10px 12px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.statRow {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.stat {
+  flex: 1;
+  background: var(--bg-card);
+  border-radius: 6px;
+  padding: 6px 8px;
+  text-align: center;
+}
+
+.statLabel {
+  display: block;
+  font-size: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.statValue {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--warning);
+}
+
+.statValueSmall {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.trackSection {
+  margin-bottom: 8px;
+}
+
+.trackLabel {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 4px;
+}
+
+.track {
+  display: flex;
+  gap: 4px;
+}
+
+.slot {
+  width: 30px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.revealed {
+  background: rgba(74, 158, 255, 0.2);
+  color: var(--accent);
+  border: 1px solid rgba(74, 158, 255, 0.3);
+}
+
+.covered {
+  background: var(--bg-card);
+  color: var(--text-muted);
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.elementsSection {
+  margin-bottom: 8px;
+}
+
+.elements {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.elementBadge {
+  font-size: 12px;
+  padding: 2px 6px;
+  background: var(--bg-card);
+  border-radius: 4px;
+  color: var(--text-primary);
+}
+
+.specialRule {
+  background: rgba(74, 158, 255, 0.1);
+  border-radius: 6px;
+  padding: 6px 8px;
+  margin-bottom: 8px;
+}
+
+.specialRuleTitle {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.specialRuleText {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.innate {
+  background: var(--bg-card);
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.innateTitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--speed-slow);
+  margin-bottom: 6px;
+}
+
+.innateLevel {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  margin-bottom: 3px;
+  font-size: 11px;
+}
+
+.innateLevelNum {
+  font-weight: 700;
+  color: var(--text-primary);
+  min-width: 24px;
+}
+
+.innateThreshold {
+  color: var(--text-secondary);
+  min-width: 60px;
+}
+
+.innateEffect {
+  color: var(--text-secondary);
+  flex: 1;
+}

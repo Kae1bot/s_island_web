@@ -1,0 +1,45 @@
+.tile {
+  cursor: pointer;
+}
+
+.tile:hover path {
+  filter: brightness(1.2);
+}
+
+.jungle {
+  fill: var(--terrain-jungle);
+  stroke: rgba(255,255,255,0.2);
+  stroke-width: 1;
+}
+
+.wetland {
+  fill: var(--terrain-wetland);
+  stroke: rgba(255,255,255,0.2);
+  stroke-width: 1;
+}
+
+.sand {
+  fill: var(--terrain-sand);
+  stroke: rgba(255,255,255,0.2);
+  stroke-width: 1;
+}
+
+.mountain {
+  fill: var(--terrain-mountain);
+  stroke: rgba(255,255,255,0.2);
+  stroke-width: 1;
+}
+
+.selected {
+  stroke: var(--accent) !important;
+  stroke-width: 2.5 !important;
+  filter: brightness(1.3);
+}
+
+.landLabel {
+  font-size: 9px;
+  font-weight: 600;
+  fill: rgba(255,255,255,0.7);
+  pointer-events: none;
+  user-select: none;
+}

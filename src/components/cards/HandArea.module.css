@@ -1,0 +1,41 @@
+.container {
+  padding: 8px 0;
+}
+
+.section {
+  margin-bottom: 8px;
+}
+
+.sectionLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0 12px 6px;
+}
+
+.cardRow {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 0 12px 4px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.cardRow::-webkit-scrollbar {
+  display: none;
+}
+
+.empty {
+  font-size: 12px;
+  color: var(--text-muted);
+  padding: 12px 0;
+}
+
+.hint {
+  font-weight: 400;
+  font-size: 10px;
+  color: var(--text-muted);
+}

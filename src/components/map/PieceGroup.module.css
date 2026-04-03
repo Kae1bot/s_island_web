@@ -1,0 +1,14 @@
+.explorer { fill: var(--piece-explorer); }
+.town { fill: var(--piece-town); }
+.city { fill: var(--piece-city); stroke: #333; stroke-width: 0.5; }
+.dahan { fill: var(--piece-dahan); }
+.presence { fill: var(--piece-presence); }
+.blight { fill: var(--piece-blight); }
+
+.label {
+  font-size: 7px;
+  font-weight: 700;
+  fill: #1a1a2e;
+  pointer-events: none;
+  user-select: none;
+}

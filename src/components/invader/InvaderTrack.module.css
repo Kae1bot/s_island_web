@@ -1,0 +1,103 @@
+.container {
+  padding: 10px 12px;
+}
+
+.pipeline {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.arrow {
+  color: var(--text-muted);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.slot {
+  flex: 1;
+  border-radius: 6px;
+  padding: 6px 8px;
+  text-align: center;
+  min-height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slotDanger {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.slotWarning {
+  background: rgba(234, 179, 8, 0.15);
+  border: 1px solid rgba(234, 179, 8, 0.3);
+}
+
+.slotDefault {
+  background: var(--bg-card);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.slotLabel {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.3px;
+}
+
+.terrain {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: capitalize;
+}
+
+.stage {
+  font-size: 10px;
+  color: var(--text-secondary);
+}
+
+.empty {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.statsRow {
+  display: flex;
+  gap: 6px;
+}
+
+.stat {
+  flex: 1;
+  text-align: center;
+  background: var(--bg-card);
+  border-radius: 4px;
+  padding: 4px 2px;
+}
+
+.statLabel {
+  display: block;
+  font-size: 9px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.statValue {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.blightDanger {
+  background: rgba(139, 34, 82, 0.3);
+}
+
+.blightDanger .statValue {
+  color: var(--piece-blight);
+}

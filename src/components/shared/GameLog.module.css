@@ -1,0 +1,18 @@
+.container {
+  padding: 8px 12px;
+  max-height: 300px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.entry {
+  font-size: 11px;
+  color: var(--text-secondary);
+  padding: 2px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  line-height: 1.4;
+}
+
+.entry:last-child {
+  border-bottom: none;
+}

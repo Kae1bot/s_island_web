@@ -1,0 +1,116 @@
+.actions {
+  padding: 8px 12px;
+  padding-bottom: calc(8px + var(--safe-bottom));
+  background: var(--bg-secondary);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  flex-shrink: 0;
+}
+
+.growthGroup {
+  display: flex;
+  gap: 6px;
+}
+
+.growthBtn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 6px;
+  border-radius: 8px;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  min-height: 56px;
+}
+
+.growthBtn:active {
+  background: var(--accent);
+}
+
+.growthLabel {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.growthSub {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.growthBtn:active .growthSub {
+  color: rgba(255,255,255,0.8);
+}
+
+.actionBtn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  min-height: 44px;
+}
+
+.defaultBtn {
+  background: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.defaultBtn:active {
+  background: var(--accent);
+}
+
+.dangerBtn {
+  background: rgba(239,68,68,0.2);
+  color: var(--danger);
+}
+
+.dangerBtn:active {
+  background: var(--danger);
+  color: white;
+}
+
+.accentBtn {
+  background: var(--accent);
+  color: white;
+}
+
+.accentBtn:active {
+  background: var(--accent-hover);
+}
+
+.presenceGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.presenceHint {
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.trackButtons {
+  display: flex;
+  gap: 6px;
+}
+
+.trackButtons .actionBtn {
+  flex: 1;
+  width: auto;
+}
+
+.landButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.landButtons .actionBtn {
+  width: auto;
+  flex: 0 0 auto;
+  min-width: 56px;
+  padding: 8px 12px;
+  font-size: 13px;
+}

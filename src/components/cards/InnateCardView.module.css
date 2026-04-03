@@ -1,0 +1,104 @@
+.card {
+  background: var(--bg-card);
+  border-radius: 8px;
+  padding: 8px 10px;
+  min-width: 150px;
+  max-width: 200px;
+  flex-shrink: 0;
+  border: 1.5px solid var(--accent);
+  transition: border-color 0.15s;
+}
+
+.playable {
+  cursor: pointer;
+  border-color: var(--success);
+}
+
+.playable:active {
+  background: rgba(34, 197, 94, 0.15);
+}
+
+.resolved {
+  opacity: 0.4;
+  border-color: var(--text-secondary);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.speed {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  background: rgba(139, 92, 246, 0.25);
+  color: var(--speed-slow);
+}
+
+.badge {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: rgba(74, 158, 255, 0.2);
+  color: var(--accent);
+}
+
+.name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.levels {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.level {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  font-size: 10px;
+  line-height: 1.4;
+  padding: 2px 0;
+}
+
+.levelActive {
+  color: var(--text-primary);
+}
+
+.levelInactive {
+  color: var(--text-secondary);
+  opacity: 0.5;
+}
+
+.levelNum {
+  font-weight: 700;
+  flex-shrink: 0;
+  min-width: 22px;
+}
+
+.thresholdMet {
+  flex-shrink: 0;
+  color: var(--success);
+}
+
+.thresholdUnmet {
+  flex-shrink: 0;
+  color: var(--text-secondary);
+}
+
+.levelDesc {
+  flex: 1;
+}
